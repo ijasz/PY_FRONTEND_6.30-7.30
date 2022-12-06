@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0%;
+      }
+
+      body {
+        height: 100vh;
+        color: white;
+        font-weight: bold;
+        font-family: cursive;
+      }
+
+      .relative-wrapper {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-color: aliceblue;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        margin: 0px auto;
+      }
+
+      .box1 {
+        position: absolute;
+        background-color: aqua;
+        left: 0%;
+        top: 0%;
+        /* z-index: 3; */
+      }
+
+      .box2 {
+        position: absolute;
+        background-color: black;
+        /* z-index: 2; */
+        top: 0%;
+        right: 0px;
+      }
+
+      .box3 {
+        position: absolute;
+        background-color: red;
+        /* z-index: 1; */
+        bottom: 0px;
+        left: 0%;
+      }
+
+      .box4 {
+        position: absolute;
+        background-color: brown;
+        /* z-index: 1; */
+        right: 0px;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative-wrapper">
+      <section class="box box1">absolute1</section>
+      <section class="box box2">absolute2</section>
+      <section class="box box3">absolute3</section>
+    </div>
+    <section class="box box4">absolute4</section>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+      :root {
+        --primary: rgb(52, 52, 200);
+        --secondary: green;
+        --red: red;
+        --box: 200px;
+      }
+
+      .box {
+        margin: 0 auto;
+        height: var(--box);
+        width: var(--box);
+        background-color: var(--primary);
+      }
+
+      .box::before {
+        display: inline-block;
+        content: "";
+        height: calc(var(--box) - 100px);
+        width: calc(var(--box) - 100px);
+        background-color: var(--secondary);
+        translate: 0% 50%;
+        transition: all 1s;
+      }
+
+      .box::after {
+        display: inline-block;
+        content: "";
+        height: calc(var(--box) - 100px);
+        width: calc(var(--box) - 100px);
+        background-color: var(--red);
+        rotate: 0deg;
+        translate: 0% 50%;
+        transition: all 1s;
+      }
+
+      .box:hover::after {
+        translate: 50% 50%;
+        rotate: 40deg;
+      }
+
+      .box:hover::before {
+        translate: -50% 50%;
+        rotate: -40deg;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
