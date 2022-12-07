@@ -1,0 +1,34 @@
+.zoning-in {
+  border-color: chartreuse;
+  color: chartreuse;
+  overflow: hidden;
+}
+
+.zoning-in::before {
+  position: absolute;
+  left: -11%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-top: 10px solid red;
+  border-right: 10px solid red;
+  background-color: transparent;
+  transform: rotate(-140deg);
+  transition: all 0.5s;
+}
+
+/* .zoning-in::after {
+  position: absolute;
+  right: -10%;
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: crimson;
+  transition: all 0.5s;
+  transform: skew(30deg);
+} */
+
+.zoning-in:hover::before {
+  border-top: 100px solid red;
+  border-right: 100px solid red;
+}

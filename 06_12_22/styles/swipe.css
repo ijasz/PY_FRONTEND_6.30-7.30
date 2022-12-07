@@ -1,0 +1,17 @@
+.swipe {
+  border-color: blueviolet;
+  color: blueviolet;
+}
+
+.swipe::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: blueviolet;
+  transition: all 0.5s;
+}
+
+.swipe:hover::before {
+  width: 100%;
+}

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("./styles/btns.css");
+@import url("./styles/swipe.css");
+@import url("./styles/diagonal-swipe.css");
+@import url("./styles/double-swipe.css");
+@import url("./styles/smoosh-swipe.css");
+@import url("./styles/diagonal-close.css");
+@import url("./styles/zoning-in.css");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -11,74 +18,4 @@
 .title2 {
   text-align: center;
   font-weight: 300;
-}
-
-.btn {
-  position: relative;
-  display: inline-block;
-  height: 60px;
-  width: 180px;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.btn > span::selection {
-  background-color: transparent;
-}
-
-.btn:active {
-  scale: 0.9;
-}
-
-.btn:hover {
-  color: white;
-  font-weight: bold;
-}
-
-.btn > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-}
-
-.swipe {
-  border-color: blueviolet;
-  color: blueviolet;
-}
-
-.swipe::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 0%;
-  background-color: blueviolet;
-  transition: all 0.5s;
-}
-
-.swipe:hover::before {
-  width: 100%;
-}
-
-.diagonal-swipe {
-  border-color: crimson;
-  color: crimson;
-  overflow: hidden;
-}
-
-.diagonal-swipe::before {
-  position: absolute;
-  left: -10%;
-  content: "";
-  height: 100%;
-  width: 0%;
-  background-color: crimson;
-  transition: all 0.5s;
-  transform: skew(30deg);
-}
-
-.diagonal-swipe:hover::before {
-  width: 120%;
 }

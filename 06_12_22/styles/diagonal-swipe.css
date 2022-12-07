@@ -1,0 +1,20 @@
+.diagonal-swipe {
+  border-color: crimson;
+  color: crimson;
+  overflow: hidden;
+}
+
+.diagonal-swipe::before {
+  position: absolute;
+  left: -10%;
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: crimson;
+  transition: all 0.5s;
+  transform: skew(30deg);
+}
+
+.diagonal-swipe:hover::before {
+  width: 120%;
+}

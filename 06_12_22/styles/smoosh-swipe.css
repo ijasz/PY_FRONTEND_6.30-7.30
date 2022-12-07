@@ -1,0 +1,30 @@
+.smoosh-swipe {
+  border-color: deeppink;
+  color: deeppink;
+  overflow: hidden;
+}
+
+.smoosh-swipe::before {
+  position: absolute;
+  top: 0%;
+  content: "";
+  height: 0%;
+  width: 100%;
+  background-color: deeppink;
+  transition: all 0.3s;
+}
+
+.smoosh-swipe::after {
+  position: absolute;
+  bottom: 0%;
+  content: "";
+  height: 0%;
+  width: 100%;
+  background-color: deeppink;
+  transition: all 0.3s;
+}
+
+.smoosh-swipe:hover::before,
+.smoosh-swipe:hover::after {
+  height: 50%;
+}

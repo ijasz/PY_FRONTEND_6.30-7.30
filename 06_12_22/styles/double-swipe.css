@@ -1,0 +1,32 @@
+.double-swipe {
+  border-color: coral;
+  color: coral;
+  overflow: hidden;
+}
+
+.double-swipe::before {
+  position: absolute;
+  left: -10%;
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: coral;
+  transition: all 0.5s;
+  transform: skew(30deg);
+}
+
+.double-swipe::after {
+  position: absolute;
+  right: -10%;
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: coral;
+  transition: all 0.5s;
+  transform: skew(-30deg);
+}
+
+.double-swipe:hover::before,
+.double-swipe:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 300px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 30px 20px;
+  cursor: pointer;
+}
+
+.btn > span::selection {
+  background-color: transparent;
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.btn:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.btn > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+}
