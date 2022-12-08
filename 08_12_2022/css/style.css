@@ -1,0 +1,38 @@
+* {
+  margin: 0%;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+  flex-direction: column-reverse;
+}
+
+.card {
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%; */
+  height: 400px;
+  /* flex-basis: 100%; */
+  width: 350px;
+  background-color: bisque;
+}
+
+.card1 {
+  background-color: chocolate;
+  /* flex: 1; */
+  /* flex-grow: ; */
+}
+.card2 {
+  background-color: blueviolet;
+  /* flex: 2; */
+}
+.card3 {
+  background-color: brown;
+  /* flex: 2; */
+}
