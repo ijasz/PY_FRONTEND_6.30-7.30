@@ -1,0 +1,37 @@
+* {
+  font-family: cursive;
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  margin: 10px 20px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 20px;
+}
+
+nav {
+  position: sticky;
+  top: 0%;
+  height: 100px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.fixed-btn {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  border-radius: 50%;
+  right: 2%;
+  bottom: 2%;
+}
+
+p:nth-of-type(5) {
+  position: sticky;
+  top: 100px;
+}
