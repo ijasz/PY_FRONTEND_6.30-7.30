@@ -84,3 +84,82 @@
   width: 120px;
   background-color: rgba(128, 128, 128, 0.112);
 }
+
+.payment-method {
+  padding: 10px;
+  margin-right: 5%;
+  background-color: rgba(128, 128, 128, 0.079);
+}
+
+.card-selection {
+  margin-right: 5%;
+  align-items: center;
+}
+
+.card-selection > * {
+  margin-right: 25px;
+}
+
+.card-selection > .avator {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.card-img-container {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.card-img-container > img {
+  width: 100%;
+  padding: 5px;
+}
+
+.card-input {
+  max-width: 400px;
+}
+
+.card-input > input {
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+}
+
+.other-input > * {
+  margin-right: 20px;
+}
+
+.other-input .col > input {
+  margin-top: 15px;
+  height: 55px;
+  max-width: 200px;
+}
+
+.other-input .btn {
+  margin-top: 40px;
+  height: 55px;
+  width: 200px;
+  color: aliceblue;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.payment-options {
+  align-items: center;
+  gap: 20px;
+}
+
+.payment-options > input {
+  width: 20px;
+  height: 20px;
+}
+
+.payment-options > .avator {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}

@@ -1,0 +1,21 @@
+@import "./classes";
+@import "./variables";
+
+body {
+  min-height: 100vh;
+  background-color: $primary;
+  @extend .center;
+
+  .outer-box {
+    height: $box * 2 + px;
+    width: $box * 2 + px;
+    background-color: aqua;
+    @extend .center;
+
+    .inner-box {
+      height: $box + px;
+      width: $box + px;
+      background-color: bisque;
+    }
+  }
+}

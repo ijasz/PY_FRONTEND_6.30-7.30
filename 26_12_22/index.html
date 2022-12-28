@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        /* grid-auto-rows: 100px; */
+        column-gap: 10px;
+        row-gap: 20px;
+      }
+
+      .grid-item > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .item2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+
+      .item3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+
+      .img {
+        height: 400px;
+        width: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Model Gallery</h1>
+    <div class="grid">
+      <div class="grid-item item1">
+        <img
+          src="https://previews.123rf.com/images/kirkchaibenjarusameeros/kirkchaibenjarusameeros1811/kirkchaibenjarusameeros181100129/127632130-merry-christmas-tree-with-gift-festival-cartoon-vector-illustration-font-design-3d-vertical-poster-e.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="grid-item item2">
+        <img src="https://wallpapercave.com/wp/GujZH5T.jpg" alt="" />
+      </div>
+
+      <div class="grid-item item3">
+        <img
+          src="https://www.cgspectrum.com/hubfs/make-3d-animation-feat.webp"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

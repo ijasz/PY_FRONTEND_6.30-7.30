@@ -1,0 +1,20 @@
+.center, body .outer-box, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+body .outer-box {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
+body .outer-box .inner-box {
+  height: 100px;
+  width: 100px;
+  background-color: bisque;
+}
