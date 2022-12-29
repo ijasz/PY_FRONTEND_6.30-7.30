@@ -1,0 +1,25 @@
+@import "./classes";
+@import "./mixins";
+
+$color: (
+  venus: #998099,
+  nebula: #d2e1dd,
+);
+
+body {
+  color: map-get($color, nebula);
+  border: not(9 == 0) and 7 == 7;
+  min-height: 100vh;
+  @extend .center;
+  .outer-box {
+    @extend .center;
+    @include box(200px, 200px, blue, 5px solid yellow);
+    .inner-box {
+      @include box(100px, 100px, red);
+    }
+  }
+}
+
+.box#{1 + 2}-some {
+  background-color: aliceblue;
+}

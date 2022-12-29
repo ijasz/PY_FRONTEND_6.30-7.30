@@ -1,0 +1,27 @@
+.center, body .outer-box, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  color: #d2e1dd;
+  border: true;
+  min-height: 100vh;
+}
+body .outer-box {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border: 5px solid yellow;
+}
+body .outer-box .inner-box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: none;
+}
+
+.box3-some {
+  background-color: aliceblue;
+}
