@@ -38,10 +38,11 @@
 // a();
 
 const doc = window.document;
-let c = 1;
+let c = 0;
 
 function update() {
   const text = doc.querySelector(".text");
+  console.log(++c);
   text.style.color = "red";
   if (c === 1) {
     text.textContent = "Hi santhosh♥";
@@ -51,9 +52,6 @@ function update() {
     text.textContent = "You are talented person";
   } else if (c === 4) {
     text.textContent = "You are cute♥";
-  } else {
-    c = 1;
+    c = 0;
   }
-
-  c++;
 }
