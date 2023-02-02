@@ -42,14 +42,49 @@ function diameter(r) {
   return Math.PI * (2 * r);
 }
 
-function circle(r, fun) {
+// function circle(r, fun) {
+//   let output = [];
+//   for (let i = 0; i < r.length; i++) {
+//     output.push(fun(r[i]));
+//   }
+//   return output;
+// }
+
+// console.log(circle(radius, area));
+// console.log(circle(radius, circumference));
+// console.log(circle(radius, diameter));
+
+// console.log("");
+// console.log(radius.map(area));
+
+// const arr = [2, 3, 6, 7];
+
+// arr.map((data, index) => {
+//   console.log(data, index);
+// });
+
+// console.log(radius.map(area));
+// console.log(radius.map(circumference));
+// console.log(radius.map(diameter));
+
+// Array.prototype.len = function () {
+//   let i;
+//   for (i = 0; i < this.length; i++) {}
+//   return i;
+// };
+
+Array.prototype.iterator = function (fun) {
   let output = [];
-  for (let i = 0; i < r.length; i++) {
-    output.push(fun(r[i]));
+  for (let i = 0; i < this.length; i++) {
+    output.push(fun(this[i]));
   }
   return output;
-}
+};
 
-console.log(circle(radius, area));
-console.log(circle(radius, circumference));
-console.log(circle(radius, diameter));
+console.log(radius.iterator(area));
+console.log(radius.iterator(circumference));
+console.log(radius.iterator(diameter));
+console.log("");
+console.log(radius.map(area));
+console.log(radius.map(circumference));
+console.log(radius.map(diameter));
