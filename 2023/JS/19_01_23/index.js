@@ -270,7 +270,7 @@ const students = [
     skills: ["HTMl", "CSS", "JS", "PY", "DJANGO"],
   },
   {
-    name: "Pravin",
+    name: "xxx",
     location: "Chennai",
     skills: ["HTMl", "CSS", "JS", "PY", "DJANGO"],
   },

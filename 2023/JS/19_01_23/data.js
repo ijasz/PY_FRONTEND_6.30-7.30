@@ -243,4 +243,19 @@ const students = [
     location: "Chennai",
     skills: ["HTMl", "CSS", "JS", "PY", "DJANGO"],
   },
+  {
+    name: "Pravin",
+    location: "Chennai",
+    skills: ["HTMl", "CSS", "JS", "PY", "DJANGO"],
+  },
+  {
+    name: "Pravin",
+    location: "Chennai",
+    skills: ["HTMl", "CSS", "JS", "PY", "DJANGO"],
+  },
+  {
+    name: "xxxx",
+    location: "Chennai",
+    skills: ["HTMl", "CSS", "JS", "PY", "DJANGO"],
+  },
 ];
