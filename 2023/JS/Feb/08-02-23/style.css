@@ -1,0 +1,5 @@
+.home {
+  display: none;
+  min-height: 100vh;
+  background-color: rgb(208, 208, 208);
+}
