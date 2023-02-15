@@ -1,0 +1,20 @@
+$f: 1;
+
+@for $i from 1 through 60 {
+  .f-#{$i} {
+    font-size: $f + rem;
+  }
+  $f: $f + 0.2;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}

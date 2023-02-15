@@ -1,0 +1,35 @@
+.cover-image {
+  position: relative;
+  color: white;
+  min-height: 100vh;
+  background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner.png.webp");
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 20px;
+    width: 100%;
+    rotate: 180deg;
+    background-image: url("https://preview.colorlib.com/theme/flatter/img/zigzag.svg");
+  }
+
+  .customer-btn {
+    border: 0.2rem solid white;
+  }
+
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 5rem;
+    background-color: white;
+    max-width: 60rem;
+    color: black;
+
+    .sub-title {
+      line-height: 2.5rem;
+    }
+  }
+}

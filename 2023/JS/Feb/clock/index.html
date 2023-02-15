@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+
+      .clock {
+        height: 700px;
+        width: 700px;
+        position: relative;
+        border: 30px solid brown;
+        border-radius: 50%;
+      }
+
+      .clock::before {
+        content: "";
+        height: 40px;
+        width: 40px;
+        border-radius: inherit;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+      }
+
+      .clock::after {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: inherit;
+        background-color: rgb(142, 142, 142);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+      }
+
+      .hr {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        height: 300px;
+        width: 10px;
+        background-color: red;
+        /* rotate: 50deg; */
+      }
+
+      .hr::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: -50%;
+        height: calc(300px / 3);
+        width: calc(100% + 10px);
+        background-color: black;
+        border: 1px solid white;
+      }
+
+      .min {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        height: 500px;
+        width: 10px;
+        background-color: aqua;
+        /* rotate: 80deg; */
+      }
+
+      .min::before {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: -50%;
+        height: calc(500px / 3);
+        width: calc(100% + 10px);
+        background-color: black;
+        border: 1px solid white;
+      }
+
+      .sec {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        height: 600px;
+        width: 5px;
+        background-color: aquamarine;
+        /* rotate: 120deg; */
+      }
+
+      .sec::before {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: -50%;
+        height: calc(600px / 3);
+        width: calc(100% + 10px);
+        background-color: black;
+        border: 1px solid white;
+      }
+
+      /* .clock > span:nth-of-type(1) {
+        position: ;
+      } */
+    </style>
+  </head>
+  <body>
+    <main class="clock">
+      <!-- <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>10</span>
+      <span>11</span>
+      <span>12</span> -->
+      <div class="hr"></div>
+      <div class="min"></div>
+      <div class="sec"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

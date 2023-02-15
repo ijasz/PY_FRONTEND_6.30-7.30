@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.clr-dark {
+  color: black;
+}
+
+.clr-danger {
+  color: red;
+}
+
+.clr-success {
+  color: green;
+}
+
+.bg-light {
+  background-color: white;
+  color: black;
+}
+
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// margin,padding,flex -----
+
+$flex-value: (start, center, end, around, between, evenly, baseline, stretch);
+$flex-property: (justify-content, align-items);
+
+@each $property in $flex-property {
+  @each $value in $flex-value {
+    .#{$property}-#{$value} {
+      @if $value == start {
+        #{$property}: flex-start;
+      } @else if $value == end {
+        #{$property}: flex-end;
+      } @else if $value == around {
+        #{$property}: space-around;
+      } @else if $value == between {
+        #{$property}: space-between;
+      } @else if $value == evenly {
+        #{$property}: space-evenly;
+      } @else {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+$i: 1;
+@while $i <= 10 {
+  .m-#{$i} {
+    margin: $i + rem;
+  }
+  .m-auto {
+    margin-inline: auto;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .my-#{$i} {
+    margin-block: $i + rem;
+  }
+  .mx-#{$i} {
+    margin-inline: $i + rem;
+  }
+  .mt-#{$i} {
+    margin-top: $i + rem;
+  }
+  .ml-#{$i} {
+    margin-left: $i + rem;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i + rem;
+  }
+  .mr-#{$i} {
+    margin-right: $i + rem;
+  }
+  .p-#{$i} {
+    padding: $i + rem;
+  }
+  .p-auto {
+    padding-inline: auto;
+  }
+  .py-#{$i} {
+    padding-block: $i + rem;
+  }
+  .px-#{$i} {
+    padding-inline: $i + rem;
+  }
+  .pt-#{$i} {
+    padding-top: $i + rem;
+  }
+  .pl-#{$i} {
+    padding-left: $i + rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i + rem;
+  }
+  .pr-#{$i} {
+    padding-right: $i + rem;
+  }
+
+  $i: $i + 1;
+}
+
+// margin,padding,flex -----
+
+// rem fonts --
+
+$fs: 1;
+
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: $fs + rem;
+  }
+  $fs: $fs + 0.2;
+}
+
+// -- rem fonts
+
+// font-weight ----
+
+$fw: 100;
+
+@for $i from 1 through 9 {
+  .fw-#{$fw} {
+    font-weight: $fw;
+  }
+  $fw: $fw + 100;
+}
+
+// font-weight ----
+
+.pe-cursor {
+  cursor: pointer;
+}
+
+// width
+
+$w: 10;
+
+@for $i from 1 through 19 {
+  .w-#{$w} {
+    width: $w * 1%;
+  }
+  $w: $w + 5;
+}

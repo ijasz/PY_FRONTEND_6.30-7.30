@@ -1,0 +1,250 @@
+.f-1 {
+  font-size: 1rem;
+}
+
+.f-2 {
+  font-size: 1.2rem;
+}
+
+.f-3 {
+  font-size: 1.4rem;
+}
+
+.f-4 {
+  font-size: 1.6rem;
+}
+
+.f-5 {
+  font-size: 1.8rem;
+}
+
+.f-6 {
+  font-size: 2rem;
+}
+
+.f-7 {
+  font-size: 2.2rem;
+}
+
+.f-8 {
+  font-size: 2.4rem;
+}
+
+.f-9 {
+  font-size: 2.6rem;
+}
+
+.f-10 {
+  font-size: 2.8rem;
+}
+
+.f-11 {
+  font-size: 3rem;
+}
+
+.f-12 {
+  font-size: 3.2rem;
+}
+
+.f-13 {
+  font-size: 3.4rem;
+}
+
+.f-14 {
+  font-size: 3.6rem;
+}
+
+.f-15 {
+  font-size: 3.8rem;
+}
+
+.f-16 {
+  font-size: 4rem;
+}
+
+.f-17 {
+  font-size: 4.2rem;
+}
+
+.f-18 {
+  font-size: 4.4rem;
+}
+
+.f-19 {
+  font-size: 4.6rem;
+}
+
+.f-20 {
+  font-size: 4.8rem;
+}
+
+.f-21 {
+  font-size: 5rem;
+}
+
+.f-22 {
+  font-size: 5.2rem;
+}
+
+.f-23 {
+  font-size: 5.4rem;
+}
+
+.f-24 {
+  font-size: 5.6rem;
+}
+
+.f-25 {
+  font-size: 5.8rem;
+}
+
+.f-26 {
+  font-size: 6rem;
+}
+
+.f-27 {
+  font-size: 6.2rem;
+}
+
+.f-28 {
+  font-size: 6.4rem;
+}
+
+.f-29 {
+  font-size: 6.6rem;
+}
+
+.f-30 {
+  font-size: 6.8rem;
+}
+
+.f-31 {
+  font-size: 7rem;
+}
+
+.f-32 {
+  font-size: 7.2rem;
+}
+
+.f-33 {
+  font-size: 7.4rem;
+}
+
+.f-34 {
+  font-size: 7.6rem;
+}
+
+.f-35 {
+  font-size: 7.8rem;
+}
+
+.f-36 {
+  font-size: 8rem;
+}
+
+.f-37 {
+  font-size: 8.2rem;
+}
+
+.f-38 {
+  font-size: 8.4rem;
+}
+
+.f-39 {
+  font-size: 8.6rem;
+}
+
+.f-40 {
+  font-size: 8.8rem;
+}
+
+.f-41 {
+  font-size: 9rem;
+}
+
+.f-42 {
+  font-size: 9.2rem;
+}
+
+.f-43 {
+  font-size: 9.4rem;
+}
+
+.f-44 {
+  font-size: 9.6rem;
+}
+
+.f-45 {
+  font-size: 9.8rem;
+}
+
+.f-46 {
+  font-size: 10rem;
+}
+
+.f-47 {
+  font-size: 10.2rem;
+}
+
+.f-48 {
+  font-size: 10.4rem;
+}
+
+.f-49 {
+  font-size: 10.6rem;
+}
+
+.f-50 {
+  font-size: 10.8rem;
+}
+
+.f-51 {
+  font-size: 11rem;
+}
+
+.f-52 {
+  font-size: 11.2rem;
+}
+
+.f-53 {
+  font-size: 11.4rem;
+}
+
+.f-54 {
+  font-size: 11.6rem;
+}
+
+.f-55 {
+  font-size: 11.8rem;
+}
+
+.f-56 {
+  font-size: 12rem;
+}
+
+.f-57 {
+  font-size: 12.2rem;
+}
+
+.f-58 {
+  font-size: 12.4rem;
+}
+
+.f-59 {
+  font-size: 12.6rem;
+}
+
+.f-60 {
+  font-size: 12.8rem;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
