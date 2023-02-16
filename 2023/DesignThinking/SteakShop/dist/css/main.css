@@ -1073,8 +1073,74 @@
   max-width: 60rem;
   color: black;
 }
-.cover-image .card .sub-title {
-  line-height: 2.5rem;
+
+.our-services .sub-title {
+  max-width: 60rem;
+}
+.our-services .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+  gap: 5rem;
+  margin-inline: auto;
+}
+.our-services .grid-wrapper .grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.122);
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+.our-services .grid-wrapper .grid-item:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.video {
+  min-height: 60rem;
+  position: relative;
+  background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner-2.png.webp");
+}
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  height: 20px;
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/flatter/img/zigzag.svg");
+}
+.video::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  height: 20px;
+  width: 100%;
+  rotate: 180deg;
+  background-color: black;
+  background-image: url("https://preview.colorlib.com/theme/flatter/img/zigzag.svg");
+  background-size: cover;
+}
+.video .icon-wrapper {
+  color: white;
+  position: absolute;
+  gap: 1rem;
+  bottom: 15%;
+  right: 8%;
+}
+
+.popular-orders .sub-title {
+  max-width: 60rem;
+}
+.popular-orders .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+  gap: 5rem;
+  margin-inline: auto;
+}
+.popular-orders .grid-wrapper .grid-item {
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+.popular-orders .grid-wrapper .grid-item .order-btn {
+  max-width: 130px;
+  border: 1px solid var(--primary);
 }
 
 :root {
@@ -1104,4 +1170,8 @@
 
 .btn > span::selection {
   background-color: transparent;
+}
+
+.sub-title {
+  line-height: 2.5rem;
 }

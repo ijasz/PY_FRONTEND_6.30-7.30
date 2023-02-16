@@ -1,0 +1,22 @@
+.popular-orders {
+  .sub-title {
+    max-width: 60rem;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+    gap: 5rem;
+    margin-inline: auto;
+
+    .grid-item {
+      border-radius: 1rem;
+      transition: all 0.5s;
+
+      .order-btn {
+        max-width: 130px;
+        border: 1px solid var(--primary);
+      }
+    }
+  }
+}

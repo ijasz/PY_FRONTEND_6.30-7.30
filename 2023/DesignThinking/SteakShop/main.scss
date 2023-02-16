@@ -1,5 +1,8 @@
 @import "./responsive";
 @import "./coverImage";
+@import "./our-services";
+@import "./video";
+@import "./popular-orders";
 
 :root {
   --primary: #76b456;
@@ -24,4 +27,8 @@
 
 .btn > span::selection {
   background-color: transparent;
+}
+
+.sub-title {
+  line-height: 2.5rem;
 }

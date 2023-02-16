@@ -1,0 +1,24 @@
+.our-services {
+  .sub-title {
+    max-width: 60rem;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+    gap: 5rem;
+    margin-inline: auto;
+
+    .grid-item {
+      border: 1px solid rgba(0, 0, 0, 0.122);
+      border-radius: 1rem;
+      transition: all 0.5s;
+      //   background-color: antiquewhite;
+
+      &:hover {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+}
