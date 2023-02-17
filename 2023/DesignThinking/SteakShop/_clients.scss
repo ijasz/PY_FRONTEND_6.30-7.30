@@ -1,0 +1,12 @@
+.clients {
+  .sub-title {
+    max-width: 60rem;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 10rem;
+    margin-inline: auto;
+  }
+}

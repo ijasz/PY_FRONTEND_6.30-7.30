@@ -3,6 +3,9 @@
 @import "./our-services";
 @import "./video";
 @import "./popular-orders";
+@import "./feedback";
+@import "./clients";
+@import "./footer";
 
 :root {
   --primary: #76b456;
@@ -15,6 +18,10 @@
 
 .text-light {
   color: #0101007c;
+}
+
+.text-white {
+  color: white;
 }
 
 .btn {
