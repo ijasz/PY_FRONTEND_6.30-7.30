@@ -5,7 +5,7 @@
 
   .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+    grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     margin-inline: auto;
 

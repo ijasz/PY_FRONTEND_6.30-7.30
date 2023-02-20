@@ -1,7 +1,7 @@
 footer {
   position: relative;
   background-color: #41a558;
-  padding-block: 20rem;
+  padding-block: 10rem;
 
   &::before {
     content: "";
@@ -18,5 +18,14 @@ footer {
     grid-auto-rows: repeat(2, 1fr);
     row-gap: 10rem;
     margin-inline: auto;
+  }
+
+  .copyright {
+    .icon {
+      height: 4rem;
+      width: 4rem;
+      background-color: rgba(255, 255, 255, 0.223);
+      // border: 1px solid white;
+    }
   }
 }

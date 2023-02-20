@@ -5,13 +5,32 @@
 
   .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+    grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     margin-inline: auto;
 
     .grid-item {
+      position: relative;
       border-radius: 1rem;
       transition: all 0.5s;
+
+      .image {
+        position: relative;
+        img {
+          min-height: 20rem;
+          object-fit: cover;
+        }
+
+        .price {
+          content: "$ 10.00";
+          position: absolute;
+          right: 5%;
+          bottom: 5%;
+          height: 4rem;
+          width: 10rem;
+          background-color: white;
+        }
+      }
 
       .order-btn {
         max-width: 130px;

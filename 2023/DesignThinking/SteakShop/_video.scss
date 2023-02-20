@@ -2,6 +2,8 @@
   min-height: 60rem;
   position: relative;
   background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner-2.png.webp");
+  background-size: cover;
+  background-attachment: fixed;
 
   &::before {
     content: "";

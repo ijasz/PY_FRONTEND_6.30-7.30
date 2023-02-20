@@ -8,7 +8,7 @@
 
 .container {
   width: 95%;
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -1050,6 +1050,9 @@
   color: white;
   min-height: 100vh;
   background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner.png.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .cover-image::before {
   content: "";
@@ -1079,7 +1082,7 @@
 }
 .our-services .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+  grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin-inline: auto;
 }
@@ -1097,6 +1100,8 @@
   min-height: 60rem;
   position: relative;
   background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner-2.png.webp");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .video::before {
   content: "";
@@ -1130,13 +1135,31 @@
 }
 .popular-orders .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, clamp(200px, 30%, 320px));
+  grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin-inline: auto;
 }
 .popular-orders .grid-wrapper .grid-item {
+  position: relative;
   border-radius: 1rem;
   transition: all 0.5s;
+}
+.popular-orders .grid-wrapper .grid-item .image {
+  position: relative;
+}
+.popular-orders .grid-wrapper .grid-item .image img {
+  min-height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular-orders .grid-wrapper .grid-item .image .price {
+  content: "$ 10.00";
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  height: 4rem;
+  width: 10rem;
+  background-color: white;
 }
 .popular-orders .grid-wrapper .grid-item .order-btn {
   max-width: 130px;
@@ -1147,6 +1170,7 @@
   min-height: 60rem;
   color: white;
   background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner-3.png.webp");
+  background-attachment: fixed;
 }
 .feedback .sub-title {
   max-width: 60rem;
@@ -1176,7 +1200,7 @@
 footer {
   position: relative;
   background-color: #41a558;
-  padding-block: 20rem;
+  padding-block: 10rem;
 }
 footer::before {
   content: "";
@@ -1192,6 +1216,11 @@ footer .grid-wrapper {
   grid-auto-rows: repeat(2, 1fr);
   row-gap: 10rem;
   margin-inline: auto;
+}
+footer .copyright .icon {
+  height: 4rem;
+  width: 4rem;
+  background-color: rgba(255, 255, 255, 0.223);
 }
 
 :root {
