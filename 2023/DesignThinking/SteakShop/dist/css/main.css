@@ -7,7 +7,7 @@
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   max-width: 1100px;
   margin: auto;
 }
@@ -1045,6 +1045,43 @@
   width: 100%;
 }
 
+nav, .cover-image {
+  box-sizing: border-box;
+}
+@media (max-width: 1000px) {
+  nav, .cover-image {
+    padding-block: 1rem;
+    background-color: rgba(240, 248, 255, 0.308);
+    color: black;
+  }
+}
+@media (max-width: 1000px) {
+  nav span, .cover-image span {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  nav .logo, .cover-image .logo {
+    max-width: 5rem;
+  }
+}
+nav .customer-btn, .cover-image .customer-btn {
+  border: 0.2rem solid white;
+}
+@media (max-width: 1000px) {
+  nav .customer-btn, .cover-image .customer-btn {
+    display: none;
+  }
+}
+nav #menu, .cover-image #menu {
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav #menu, .cover-image #menu {
+    display: block;
+  }
+}
+
 .cover-image {
   position: relative;
   color: white;
@@ -1063,18 +1100,22 @@
   rotate: 180deg;
   background-image: url("https://preview.colorlib.com/theme/flatter/img/zigzag.svg");
 }
-.cover-image .customer-btn {
-  border: 0.2rem solid white;
-}
 .cover-image .card {
   position: absolute;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  padding: 5rem;
+  padding-inline: 5rem;
+  padding-block: 6rem;
   background-color: white;
-  max-width: 60rem;
+  max-width: 65rem;
   color: black;
+}
+@media (max-width: 1000px) {
+  .cover-image .card {
+    max-width: auto;
+    width: 90%;
+  }
 }
 
 .our-services .sub-title {
@@ -1085,6 +1126,16 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin-inline: auto;
+}
+@media (max-width: 1200px) {
+  .our-services .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .our-services .grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .our-services .grid-wrapper .grid-item {
   border: 1px solid rgba(0, 0, 0, 0.122);
@@ -1139,6 +1190,16 @@
   gap: 5rem;
   margin-inline: auto;
 }
+@media (max-width: 1200px) {
+  .popular-orders .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .popular-orders .grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .popular-orders .grid-wrapper .grid-item {
   position: relative;
   border-radius: 1rem;
@@ -1172,6 +1233,11 @@
   background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner-3.png.webp");
   background-attachment: fixed;
 }
+@media (max-width: 1200px) {
+  .feedback {
+    display: none;
+  }
+}
 .feedback .sub-title {
   max-width: 60rem;
 }
@@ -1196,6 +1262,16 @@
   row-gap: 10rem;
   margin-inline: auto;
 }
+@media (max-width: 1200px) {
+  .clients .grid-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .clients .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 footer {
   position: relative;
@@ -1217,6 +1293,23 @@ footer .grid-wrapper {
   row-gap: 10rem;
   margin-inline: auto;
 }
+@media (max-width: 1000px) {
+  footer .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60rem;
+    row-gap: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  footer .grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  footer .copyright .container {
+    flex-direction: column;
+  }
+}
 footer .copyright .icon {
   height: 4rem;
   width: 4rem;
@@ -1225,7 +1318,21 @@ footer .copyright .icon {
 
 :root {
   --primary: #76b456;
+}
+
+html {
   font-size: 10px;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1.title {
+    font-size: 3rem;
+  }
 }
 
 .text-dark {

@@ -9,6 +9,14 @@
     gap: 5rem;
     margin-inline: auto;
 
+    @include mq(1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(700px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     .grid-item {
       border: 1px solid rgba(0, 0, 0, 0.122);
       border-radius: 1rem;

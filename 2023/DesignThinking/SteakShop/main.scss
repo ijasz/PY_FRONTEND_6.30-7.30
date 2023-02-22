@@ -9,7 +9,19 @@
 
 :root {
   --primary: #76b456;
+}
+
+html {
   font-size: 10px;
+  @include mq(1000px) {
+    font-size: 9px;
+  }
+}
+
+h1.title {
+  @include mq(1000px) {
+    font-size: 3rem;
+  }
 }
 
 .text-dark {

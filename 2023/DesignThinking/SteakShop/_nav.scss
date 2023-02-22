@@ -1,0 +1,35 @@
+@import "./media-query";
+
+nav {
+  box-sizing: border-box;
+  @include mq(1000px) {
+    padding-block: 1rem;
+    background-color: rgba(240, 248, 255, 0.308);
+    color: black;
+  }
+  span {
+    @include mq(1000px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    @include mq(1000px) {
+      max-width: 5rem;
+    }
+  }
+
+  .customer-btn {
+    border: 0.2rem solid white;
+    @include mq(1000px) {
+      display: none;
+    }
+  }
+
+  #menu {
+    display: none;
+    @include mq(1000px) {
+      display: block;
+    }
+  }
+}

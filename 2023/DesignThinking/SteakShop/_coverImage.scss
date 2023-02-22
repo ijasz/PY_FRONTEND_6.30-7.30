@@ -1,3 +1,5 @@
+@import "./nav";
+
 .cover-image {
   position: relative;
   color: white;
@@ -17,18 +19,22 @@
     background-image: url("https://preview.colorlib.com/theme/flatter/img/zigzag.svg");
   }
 
-  .customer-btn {
-    border: 0.2rem solid white;
-  }
+  @extend nav;
 
   .card {
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    padding: 5rem;
+    padding-inline: 5rem;
+    padding-block: 6rem;
     background-color: white;
-    max-width: 60rem;
+    max-width: 65rem;
     color: black;
+
+    @include mq(1000px) {
+      max-width: auto;
+      width: 90%;
+    }
   }
 }

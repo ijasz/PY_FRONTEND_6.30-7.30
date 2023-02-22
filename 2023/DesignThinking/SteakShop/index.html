@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -30,6 +31,7 @@
           <span class="pe-cursor">Menu</span>
           <span class="pe-cursor">Gallery</span>
           <img
+            class="logo"
             src="https://preview.colorlib.com/theme/flatter/img/logo.png.webp"
             alt="image"
           />
@@ -39,6 +41,7 @@
           <div class="customer-btn btn pe-cursor p-1">
             <span class="fs-3">Customer Order</span>
           </div>
+          <span class="pe-cursor" id="menu">Menu</span>
         </section>
       </nav>
 
@@ -54,14 +57,20 @@
 
     <main class="our-services">
       <main class="container py-8">
-        <h1 class="fs-20 my-2">Our Services</h1>
+        <h1 class="title fs-20 my-2">Our Services</h1>
         <p class="fs-2 sub-title my-2">
           inappropriate behavior is often laughed off as “boys will be boys,”
           women face higher conduct standards especially in the workplace.
           That’s why it’s crucial that, as women.
         </p>
         <section class="grid-wrapper my-7">
-          <article class="grid-item text-center px-3 py-5">
+          <article
+            class="grid-item text-center px-3 py-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+          >
             <span class="material-symbols-outlined" style="font-size: 6rem">
               redeem
             </span>
@@ -72,7 +81,13 @@
             </p>
           </article>
 
-          <article class="grid-item text-center px-3 py-6">
+          <article
+            class="grid-item text-center px-3 py-6"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+          >
             <span class="material-symbols-outlined" style="font-size: 6rem">
               cake
             </span>
@@ -83,7 +98,13 @@
             </p>
           </article>
 
-          <article class="grid-item text-center px-3 py-6">
+          <article
+            class="grid-item text-center px-3 py-6"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+          >
             <span class="material-symbols-outlined" style="font-size: 6rem">
               sports_kabaddi
             </span>
@@ -94,7 +115,13 @@
             </p>
           </article>
 
-          <article class="grid-item text-center px-3 py-5">
+          <article
+            class="grid-item text-center px-3 py-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+          >
             <span class="material-symbols-outlined" style="font-size: 6rem">
               redeem
             </span>
@@ -105,7 +132,13 @@
             </p>
           </article>
 
-          <article class="grid-item text-center px-3 py-6">
+          <article
+            class="grid-item text-center px-3 py-6"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+          >
             <span class="material-symbols-outlined" style="font-size: 6rem">
               redeem
             </span>
@@ -116,7 +149,13 @@
             </p>
           </article>
 
-          <article class="grid-item text-center px-3 py-6">
+          <article
+            class="grid-item text-center px-3 py-6"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+          >
             <span class="material-symbols-outlined" style="font-size: 6rem">
               redeem
             </span>
@@ -145,8 +184,8 @@
     </main>
 
     <main class="popular-orders">
-      <main class="container py-8">
-        <h1 class="fs-20 my-2">Popular Orders</h1>
+      <main class="container py-5">
+        <h1 class="title fs-20 my-2">Popular Orders</h1>
         <p class="fs-2 sub-title my-2">
           inappropriate behavior is often laughed off as “boys will be boys,”
           women face higher conduct standards especially in the workplace.
@@ -306,8 +345,8 @@
     </main>
 
     <main class="clients">
-      <main class="container py-8">
-        <h1 class="fs-20 my-2">Brands love to take Our Services</h1>
+      <main class="container py-5">
+        <h1 class="title fs-20 my-2">Brands love to take Our Services</h1>
         <p class="fs-2 sub-title my-2">
           inappropriate behavior is often laughed off as “boys will be boys,”
           women face higher conduct standards especially in the workplace.
@@ -425,9 +464,9 @@
           <article class="fw-200 fs-3 my-2">
             You can trust us. we only send promo offers,
           </article>
-          <div>
+          <div class="row">
             <input class="fw-200 my-1 py-1" />
-            <button type="button" class="py-1 px-2">=></button>
+            <button type="button" class="my-1 py-1 px-2">=></button>
           </div>
         </section>
       </main>
@@ -455,5 +494,9 @@
         </section>
       </main>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

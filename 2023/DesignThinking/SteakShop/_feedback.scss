@@ -3,6 +3,9 @@
   color: white;
   background-image: url("https://preview.colorlib.com/theme/flatter/img/banner/banner-3.png.webp");
   background-attachment: fixed;
+  @include mq(1200px) {
+    display: none;
+  }
 
   .sub-title {
     max-width: 60rem;
@@ -10,6 +13,7 @@
 
   .flex-wrapper {
     gap: 10rem;
+
     // background-color: rgba(250, 235, 215, 0.286);
 
     .flex-item {

@@ -8,5 +8,13 @@
     grid-template-columns: repeat(6, 1fr);
     row-gap: 10rem;
     margin-inline: auto;
+
+    @include mq(1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mq(700px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
